@@ -1,3 +1,3 @@
 #OpenSW
 
-About OpenSw in BootCamp
+About the 2nd year winter semester k-software competency enhancement bootcamp
