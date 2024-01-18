@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>book 객체 배열 만들기</title>
+</head>
+
+<body>
+    <h3>book 객체 배열 만들기</h3>
+    <hr>
+    <script>
+        let book1 = new Object();
+        book1.title = "HTML5";
+        book1.author = "홍길동";
+        book1.price = 20000;
+
+        let book2 = new Object();
+        book2.title = "CSS3";
+        book2.author = "이순신";
+        book2.price = 50000;
+
+        let book3 = new Object();
+        book3.title = "JAVA";
+        book3.author = "세종";
+        book3.price = 30000;
+
+        let book4 = new Object();
+        book4.title = "Vue.js";
+        book4.author = "강감찬";
+        book4.price = 60000;
+
+        let book5 = new Object();
+        book5.title = "C++";
+        book5.author = "최수종";
+        book5.price = 25000;
+
+        let bookArray = [book1, book2, book3, book4, book5];
+
+        let maxPrice = 0;
+        let expensiveBookName = "";
+        for (let i = 0; i < bookArray.length; i++) {
+            document.write(bookArray[i].title, ", ");
+            document.write(bookArray[i].author + ", ");
+            document.write(bookArray[i].price + "<br>");
+
+            if (bookArray[i].price > maxPrice) {
+                
+                maxPrice = bookArray[i].price;
+                expensiveBookName = bookArray[i].title;
+            }
+        }
+
+        document.write("<hr>");
+        document.write("가장 가격이 비싼 책은 " + expensiveBookName);
+    </script>
+</body>
+
+</html>

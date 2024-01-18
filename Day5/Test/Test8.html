@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>eval()로 수식 계산</title>
+    <script>
+        function goGo(expression) {
+            try {
+                let result = eval(expression);
+                document.write("<p>" + expression + " = " + result + "</p>");
+            } catch (error) {
+                document.write("<p>올바른 수식을 입력하세요.</p>");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h3>eval()로 수식 계산</h3>
+    <hr>
+    <script>
+        let userInput = prompt("수식 입력", "");
+
+        if (userInput) {
+            goGo(userInput);
+        } else {
+            document.write("<p>수식을 입력하세요.</p>");
+        }
+    </script>
+</body>
+
+</html>

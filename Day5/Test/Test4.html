@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>별 문자 출력하기</title>
+    <script>
+        function goGo(n) {
+            if (n === "월" || n === "목") {
+                document.write(n + "은 출근");
+            } else if (n === "화" || n === "수") {
+                document.write(n + "는 출근");
+            }
+            else {
+                document.write(n + "은 휴일");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h3>월화수목금토일</h3>
+    <hr>
+    <script>
+        let n = prompt("월화수목금토일 중에서 입력하세요", "");
+        goGo(n);
+    </script>
+</body>
+
+</html>
