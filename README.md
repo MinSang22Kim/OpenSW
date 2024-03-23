@@ -1,3 +1,3 @@
 #OpenSW
 
-🪖 About the 2nd year winter semester k-software competency enhancement bootcamp
+🪖 About Front-End skills in k-software competency enhancement bootcamp
